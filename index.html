@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Çekici İzmit Oto Kurtarma | 05411416341</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <img src="LOGO3.png">
+      </div>
+      <div class="middle">HEMEN ARA, TEK TELEFON 7/24 YAKININDAYIZ</div>
+      <div class="header-right">
+        <a href="tel://+905411416341"><img src="call.png" alt="" /></a>
+      </div>
+    </header>
+    <section class="sectionone">
+      <div class="left">
+        <p>BİZE KONUM ATIN!</p>
+        <a href="https://wa.me/905411416341"
+          ><img src="whatsapp.png" alt=""
+        /></a>
+      </div>
+      <div class="right">
+        <p>ÇAĞRI MERKEZİ</p>
+        <a href="tel://+905411416341"><img src="telephone.png" alt="" /></a>
+      </div>
+    </section>
+    <section class="sectiontwo">
+      <div class="headerTop">7/24 SİZLERE ULAŞABİLECEĞİMİZ NOKTALAR</div>
+      <div class="list">
+        <div>
+          <ul>
+            <li>Kocaeli Çekici</li>
+            <li>Gölcük Çekici</li>
+            <li>Gebze Çekici</li>
+            <li>Dilovası Çekici</li>
+            <li>Kartepe Çekici</li>
+            <li>Kandıra Çekici</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>İzmit Çekici</li>
+            <li>Darıca Çekici</li>
+            <li>Başiskele Çekici</li>
+            <li>Çayırova Çekici</li>
+            <li>Karamürsel Çekici</li>
+            <li>Derince Çekici</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>Çınarcık Çekici</li>
+            <li>Çiftlikköy Çekici</li>
+            <li>Altınova Çekici</li>
+            <li>Merkez Çekici</li>
+            <li>Armutlu Çekici</li>
+            <li>Kocaeli Çekici</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="sectionThree">
+      <div class="text">FİLOMUZDAN GÖRÜNTÜLER</div>
+      <div class="photos">
+        <button id="back">GERİ</button>
+        <img
+          id="image"
+          src="1.jpg"
+          alt=""
+        />
+        <button id="next">İLERİ</button>
+      </div>
+    </section>
+    <footer>
+      <p>
+        İzmit Oto Kurtarma İzmit (Kocaeli) bölgesinde hizmet sunan firmamız her
+        türlü <br />
+        oto kurtarma ve araç çekimi gibi işlemleriniz için 7 gün 24 saat <br />
+        kesintisiz çözüm üretmektedir. <br />
+        Öyleyse hemen bize ulaşın, anında hizmet kalitesiyle İzmit'in tercihi
+        olan hizmetimizden faydalanın.
+      </p>
+      <div>
+        <img src="LOGO3.png" alt="" />
+      </div>
+    </footer>
+  </body>
+  <script>
+    const myPhotoList = [
+      {
+        src: "1.jpg",
+      },
+      {
+        src: "2.jpg",
+      },
+      {
+        src: "3.jpg",
+      },
+    ];
+
+    let image = document.getElementById("image");
+
+    let count = 0;
+
+    function result() {
+      if (count < 0) {
+        count = myPhotoList.length - 1;
+      } else if (count == myPhotoList.length) {
+        count = 0;
+      }
+      image.src = myPhotoList[count].src
+    }
+
+    let buttonBack = document.getElementById('back')
+    let buttonNext = document.getElementById('next')
+
+    buttonBack.onclick = () => {
+    count--;
+    result()
+}
+
+buttonNext.onclick = () => {
+    count++;
+    result()
+}
+  </script>
+</html>
